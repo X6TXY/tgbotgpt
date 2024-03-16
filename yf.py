@@ -1,5 +1,5 @@
 import yfinance as yf
-# import matplotlib.pyplot as plt
+
 import os
 import warnings
 from mplchart.chart import Chart
