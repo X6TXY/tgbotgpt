@@ -40,8 +40,10 @@ def askbot(user_quiston):
 
         convo = model.start_chat(history=[
         ])
+        user_quiston = 'Ты NaraSenseAI, всегда отвечай от имени NaraSenseAI' + user_quiston
         try:
             convo.send_message(user_quiston)
+            text = convo.last.text
             return convo.last.text
         except:
             return 'Я искуственный интелект и не могу отвечать на такой тип вопросов.'
